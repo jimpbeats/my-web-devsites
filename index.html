@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Dubai</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="frame2 container mt-3 p-4 bg-white shadow-sm">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#home">
+                    <img src="images/Dubai_Logo.png" alt="Dubai Logo" width="150">
+                </a>
+
+                <!-- Toggler for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dubai">Dubai</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#attractions">Attractions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#culture">Culture & Heritage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dining">Food & Dining</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <!-- Visit Dubai Button -->
+                    <button class="btn visit-btn">Visit Dubai</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Home Section (Carousel) -->
+    <section id="home">
+        <div id="dubaiCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#dubaiCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#dubaiCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#dubaiCarousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Hero_slider.jpg" class="d-block w-100" alt="Dubai City Skyline">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Discover Dubai</h5>
+                        <p>Experience the vibrant city of luxury and innovation.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Hero_slider1.jpg" class="d-block w-100" alt="Burj Khalifa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Burj Khalifa</h5>
+                        <p>The tallest building in the world.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Hero_slider2.jpg" class="d-block w-100" alt="Palm Jumeirah">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Palm Jumeirah</h5>
+                        <p>An iconic man-made island.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#dubaiCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#dubaiCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Dubai Section -->
+    <section id="dubai" class="container my-5">
+        <h2 class="text-center mb-4">About Dubai</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Dubai, a dazzling jewel in the Middle East, has transformed from a humble pearling and fishing settlement into a global metropolis renowned for its audacious architecture, luxury, and groundbreaking advancements. Founded in the early 18th century, Dubai's strategic location on the Persian Gulf allowed it to flourish as a trade hub, especially after declaring itself a free port in 1901.</p>
+                <p>The discovery of oil in the late 1960s accelerated its growth, but unlike many oil-rich nations, Dubai proactively diversified its economy into tourism, finance, trade, and technology. Under visionary leadership, it has consistently pushed the boundaries of what's possible, becoming a beacon of innovation and a hub for international business and leisure. Its commitment to smart city initiatives, sustainable development, and cutting-edge infrastructure positions it as a leader in the 21st century.</p>
+                <p>Dubai is a city of innovation and luxury, blending modern architecture with rich cultural heritage. Known for its skyscrapers, shopping malls, and desert adventures, Dubai offers a unique experience for every visitor.</p>
+                <p>From the bustling souks to the serene beaches, Dubai is a destination that captivates the senses.</p>
+                <!-- Tabbed Interface -->
+                <ul class="nav nav-tabs mt-4" id="dubaiTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="population-tab" data-bs-toggle="tab" data-bs-target="#population" type="button" role="tab" aria-controls="population" aria-selected="true">Population</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="location-tab" data-bs-toggle="tab" data-bs-target="#location" type="button" role="tab" aria-controls="location" aria-selected="false">Location</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="climate-tab" data-bs-toggle="tab" data-bs-target="#climate" type="button" role="tab" aria-controls="climate" aria-selected="false">Climate</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-3" id="dubaiTabContent">
+                    <div class="tab-pane fade show active" id="population" role="tabpanel" aria-labelledby="population-tab">
+                        <p>Dubai's population is approximately 3.6 million (as of 2025), making it the most populous city in the United Arab Emirates. It is a melting pot of cultures, with over 200 nationalities living and working together, where expatriates make up about 85% of the population.</p>
+                    </div>
+                    <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+                        <p>Dubai is located on the southeast coast of the Persian Gulf in the United Arab Emirates, at the crossroads of Europe, Asia, and Africa. It lies at approximately 25.2°N latitude and 55.3°E longitude, making it a strategic hub for global trade and travel.</p>
+                    </div>
+                    <div class="tab-pane fade" id="climate" role="tabpanel" aria-labelledby="climate-tab">
+                        <p>Dubai has a hot desert climate with two main seasons: summer (May to October) with temperatures averaging 35–45°C (95–113°F), and winter (November to April) with milder temperatures of 20–25°C (68–77°F). Rainfall is scarce, occurring mainly in winter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="dubaiSectionCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#dubaiSectionCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#dubaiSectionCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#dubaiSectionCarousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Museum of the Future.jpg" class="d-block w-100 section-img" alt="Museum of the Future">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Museum of the Future</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Dubai Creek Harbour.jpeg" class="d-block w-100 section-img" alt="Dubai Creek Harbour">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dubai Creek Harbour</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Hero_slider2.jpg" class="d-block w-100 section-img" alt="Dubai Marina">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Dubai Marina</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#dubaiSectionCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#dubaiSectionCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="container my-5">
+        <h2 class="text-center mb-4">Top Attractions in Dubai</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 attraction-card">
+                    <img src="images/Burj Khalifa.jpg" class="card-img-top" alt="Burj Khalifa">
+                    <div class="card-body">
+                        <h5 class="card-title">Burj Khalifa</h5>
+                        <p class="card-text">The world's tallest building, offering panoramic views from its observation decks.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 attraction-card">
+                    <img src="images/Dubai Mall.jpg" class="card-img-top" alt="Dubai Mall">
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai Mall</h5>
+                        <p class="card-text">One of the largest shopping and entertainment destinations globally.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 attraction-card">
+                    <img src="images/Palm Jumeirah.jpg" class="card-img-top" alt="Palm Jumeirah">
+                    <div class="card-body">
+                        <h5 class="card-title">Palm Jumeirah</h5>
+                        <p class="card-text">An iconic man-made island with luxury resorts and beaches.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 attraction-card">
+                    <img src="images/The Dubai Fountain.jpg" class="card-img-top" alt="The Dubai Fountain">
+                    <div class="card-body">
+                        <h5 class="card-title">The Dubai Fountain</h5>
+                        <p class="card-text">A spectacular choreographed fountain show set to music and lights.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 attraction-card">
+                    <img src="images/Global Village.jpg" class="card-img-top" alt="Global Village">
+                    <div class="card-body">
+                        <h5 class="card-title">Global Village</h5>
+                        <p class="card-text">A multicultural festival park with pavilions, dining, and entertainment.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 attraction-card">
+                    <img src="images/Dubai Marina.jpg" class="card-img-top" alt="Dubai Marina">
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai Marina</h5>
+                        <p class="card-text">A stunning waterfront with yachts, dining, and skyscrapers.</p>
+                        <a href="#" class="btn btn-outline-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & Heritage Section -->
+    <section id="culture" class="container-fluid bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Culture & Heritage</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/Culture & Heritage.jpg" class="img-fluid rounded section-img" alt="Dubai Culture">
+                </div>
+                <div class="col-md-6">
+                    <p>Experience Dubai's rich cultural heritage through its traditional souks, museums, and historic districts like Al Fahidi. Learn about Bedouin traditions and the city's rapid transformation into a global metropolis.</p>
+                    <p>Visit the Dubai Museum or take a stroll through the Alserkal Avenue for a blend of history and contemporary art.</p>
+                    <p>Emirati culture is deeply rooted in its nomadic Bedouin past, with traditions like falconry, camel racing, and warm hospitality (Al Karam) where guests are offered Arabic coffee (Gahwa) and dates. Islamic values shape daily life and architecture, evident in the call to prayer and stunning mosques. Traditional attire, such as the <em>Kandura</em> and <em>Abaya</em>, reflects pride in identity, while crafts like <em>Al Sadu</em> weaving and <em>Ayyala</em> dances showcase vibrant cultural expressions.</p>
+                </div>
+            </div>
+            <div class="culture-experience mt-4">
+                <h3 class="text-center mb-4">Where to Experience Culture & Heritage</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 culture-card">
+                            <img src="images/Al Fahidi Historical Neighbourhood.jpg" class="card-img-top" alt="Al Fahidi Historical Neighbourhood">
+                            <div class="card-body">
+                                <h5 class="card-title">Al Fahidi Historical Neighbourhood</h5>
+                                <p class="card-text">A preserved district with traditional wind-tower architecture and narrow lanes.</p>
+                                <a href="https://www.visitdubai.com/en/places-to-visit/al-fahidi-historical-neighbourhood" target="_blank" class="btn btn-outline-primary">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 culture-card">
+                            <img src="images/Dubai Museum (Al Fahidi Fort).jpg" class="card-img-top" alt="Dubai Museum">
+                            <div class="card-body">
+                                <h5 class="card-title">Dubai Museum (Al Fahidi Fort)</h5>
+                                <p class="card-text">Housed in the oldest building in Dubai, it showcases the city's history.</p>
+                                <a href="https://www.visitdubai.com/en/places-to-visit/dubai-museum" target="_blank" class="btn btn-outline-primary">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 culture-card">
+                            <img src="images/smccu.jpg" class="card-img-top" alt="SMCCU">
+                            <div class="card-body">
+                                <h5 class="card-title">SMCCU</h5>
+                                <p class="card-text">Offers cultural tours, meals, and mosque visits to learn about Emirati traditions.</p>
+                                <a href="https://www.cultures.ae/" target="_blank" class="btn btn-outline-primary">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 culture-card">
+                            <img src="images/Jumeirah Mosque.jpg" class="card-img-top" alt="Jumeirah Mosque">
+                            <div class="card-body">
+                                <h5 class="card-title">Jumeirah Mosque</h5>
+                                <p class="card-text">A stunning mosque open to non-Muslims for guided tours, highlighting Islamic architecture.</p>
+                                <a href="https://www.jumeirahmosque.ae/" target="_blank" class="btn btn-outline-primary">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 culture-card">
+                            <img src="images/Camel Racing & Falconry.jpg" class="card-img-top" alt="Camel Racing & Falconry">
+                            <div class="card-body">
+                                <h5 class="card-title">Camel Racing & Falconry</h5>
+                                <p class="card-text">Experience traditional sports at Al Marmoom Heritage Village or falconry centers.</p>
+                                <a href="https://www.visitdubai.com/en/articles/camel-racing-in-dubai" target="_blank" class="btn btn-outline-primary">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 culture-card">
+                            <img src="images/Etihad Museum.jpg" class="card-img-top" alt="Etihad Museum">
+                            <div class="card-body">
+                                <h5 class="card-title">Etihad Museum</h5>
+                                <p class="card-text">Explores the UAE's formation and modern history through interactive exhibits.</p>
+                                <a href="https://www.etihadmuseum.ae/" target="_blank" class="btn btn-outline-primary">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food & Dining Section -->
+    <section id="dining" class="container my-5">
+        <h2 class="text-center mb-4">Food & Dining</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Dubai's culinary scene is a vibrant reflection of its cosmopolitan nature, offering an unparalleled gastronomic adventure for every palate. 
+                 From traditional Emirati dishes that tell tales of the desert to Michelin-starred restaurants showcasing global cuisines, the city is a true food lover's paradise.</p>
+                <p>Try traditional Emirati dishes like Al Harees or indulge in fine dining at Burj Al Arab.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/Food & Dining.jpg" class="img-fluid rounded section-img" alt="Dubai Dining">
+            </div>
+        </div>
+        <div class="dining-experience mt-4">
+            <h3 class="text-center mb-4">Where to Explore Dubai’s Food Scene</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 dining-card">
+                        <img src="images/Traditional Emirati Restaurants.jpeg" class="card-img-top" alt="Traditional Emirati Restaurants">
+                        <div class="card-body">
+                            <h5 class="card-title">Traditional Emirati Restaurants</h5>
+                            <p class="card-text">Savor authentic dishes like Al Harees and Machboos at places like Al Fanar Restaurant.</p>
+                            <a href="https://www.visitdubai.com/en/articles/emirati-cuisine" target="_blank" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 dining-card">
+                        <img src="images/Michelin-Starred & Fine Dining.jpeg" class="card-img-top" alt="Michelin-Starred & Fine Dining">
+                        <div class="card-body">
+                            <h5 class="card-title">Michelin-Starred & Fine Dining</h5>
+                            <p class="card-text">Experience world-class cuisine at restaurants like IDAM by Alain Ducasse in Burj Al Arab.</p>
+                            <a href="https://guide.michelin.com/jp/en/article/michelin-guide-ceremony-news/inaugural-dubai-2022-michelin-guide-announced" target="_blank" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 dining-card">
+                        <img src="images/Vibrant Food Markets.jpeg" class="card-img-top" alt="Vibrant Food Markets">
+                        <div class="card-body">
+                            <h5 class="card-title">Vibrant Food Markets</h5>
+                            <p class="card-text">Explore diverse street food at places like Global Village or Ripe Market.</p>
+                            <a href="https://www.visitdubai.com/en/articles/dubai-food-markets" target="_blank" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container-fluid bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="button" class="btn visit-btn w-100" onclick="submitForm()">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3 text-center">
+        <p class="mb-0">© 2025 Visit Dubai. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
